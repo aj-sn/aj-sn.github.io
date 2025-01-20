@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<style type="text/css" media="screen">
+  /* Apply a soft background color to the entire page for a pleasant aesthetic */
+  body {
+    background-color: #121212;
+    font-family: Arial, sans-serif; /* Use a clean and readable font */
+    color: #E0E0E0; /* Set a dark gray color for text for good contrast */
+  }
+
+  /* Center the content and restrict the maximum width for better readability */
+  .container {
+    margin: 50px auto; /* Add vertical margin and center horizontally */
+    max-width: 600px; /* Limit the width to prevent overly stretched content */
+    text-align: center; /* Align text to the center of the container */
+  }
+
+  /* Style the main header for the 404 page */
+  h2 {
+    margin: 30px 0; /* Add spacing above and below the header */
+    font-size: 5em; /* Make the font size large to grab attention */
+    line-height: 1.2; /* Set line height for proper spacing */
+    letter-spacing: -1px; /* Slightly condense the letter spacing */
+    color: #dc3545; /* Use a bold red color to signify an error */
+  }
+
+  /* Style the descriptive paragraphs */
+  p {
+    font-size: 1.2em; /* Increase font size for better readability */
+    margin: 10px 0; /* Add spacing above and below paragraphs */
+  }
+
+  /* Style for the image container */
+  .broken-image {
+    margin: 20px 0; /* Add spacing around the image */
+  }
+</style>
+
+<div class="container">
+  <!-- Main header for the 404 page -->
+  <h2>404</h2>
+
+  <!-- Informative text to notify the user about the missing page -->
+  <p><strong>Oops! Page not found</strong></p>
+  <p>The page you're looking for might be broken or doesn't exist anymore.</p>
+
+  <!-- Include a locally stored image to visually represent the error -->
+  <div class="broken-image">
+    <img src="./img/broken_micro.jpeg" alt="Broken Microcontroller" style="width: 400px; height: auto;">
+    <!-- Image sourced from the local `img` folder; make sure the file exists -->
+  </div>
+
+  <!-- Provide a link for users to navigate back to the homepage -->
+  <p>
+    <a href="/" style="text-decoration: none; color: #007bff; font-weight: bold;">Go Back Home</a>
+  </p>
+</div>
